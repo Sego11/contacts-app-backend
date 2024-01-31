@@ -22,7 +22,7 @@ const errorHandler = (err, req, res, next) => {
         title: "unauthorized",
         message: err.message,
         stackTrace: err.stack,
-      });
+      }); 
     case constants.VALIDATION_ERROR:
       res.json({
         title: "Validation failed",
